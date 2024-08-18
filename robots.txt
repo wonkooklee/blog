@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://your-site-url.com/sitemap.xml
-Host: https://your-site-url.com
+Sitemap: https://wonkooklee.github.io/blog/sitemap.xml
+Host: https://wonkooklee.github.io
