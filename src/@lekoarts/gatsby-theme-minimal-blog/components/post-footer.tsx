@@ -13,7 +13,7 @@ export default function PostFooter() {
     scriptEl.src = "https://utteranc.es/client.js";
     scriptEl.setAttribute("repo", "wonkooklee/blog");
     scriptEl.setAttribute("issue-term", "pathname");
-    scriptEl.setAttribute("theme", "preferred-color-scheme");
+    scriptEl.setAttribute("theme", "github-light");
     scriptEl.setAttribute("crossorigin", "anonymous");
 
     if (commentsEl.current) {

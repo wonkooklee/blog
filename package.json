@@ -20,10 +20,13 @@
     "@lekoarts/gatsby-theme-minimal-blog": "^6.2.1",
     "gatsby": "^5.13.6",
     "gatsby-plugin-feed": "^5.13.1",
+    "gatsby-plugin-google-gtag": "^5.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-plugin-webpack-statoscope": "^1.0.3",
+    "gatsby-remark-autolink-headers": "^6.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0"

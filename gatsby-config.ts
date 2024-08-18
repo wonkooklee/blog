@@ -21,6 +21,41 @@ const config: GatsbyConfig = {
   trailingSlash: `always`,
   plugins: [
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `100`, // 헤더와의 오프셋 설정
+              maintainCase: false,
+              removeAccents: true,
+              elements: [`h1`, `h2`, `h3`, `h4`, `h5`, `h6`],
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: ["G-LDFXB9NT9E"],
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Delays processing pageview events on route update (in milliseconds)
+          delayOnRouteUpdate: 0,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/blog/sitemap.xml`, // 기본 경로
