@@ -118,15 +118,15 @@ const config: GatsbyConfig = {
                 };
               }),
             query: `{
-  allPost(sort: {date: DESC}) {
-    nodes {
-      title
-      date(formatString: "MMMM D, YYYY")
-      excerpt
-      slug
-    }
-  }
-}`,
+              allPost(sort: {date: DESC}) {
+                nodes {
+                  title
+                  date(formatString: "MMMM D, YYYY")
+                  excerpt
+                  slug
+                }
+              }
+            }`,
             output: `rss.xml`,
             title: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
           },
