@@ -18,7 +18,7 @@ const config: GatsbyConfig = {
     siteLanguage: `en`,
     author: `@lekoarts_de`,
   },
-  trailingSlash: `always`,
+  trailingSlash: `never`,
   plugins: [
     {
       resolve: `gatsby-transformer-remark`,
