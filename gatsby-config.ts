@@ -21,6 +21,25 @@ const config: GatsbyConfig = {
   trailingSlash: `always`,
   plugins: [
     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/blog/sitemap.xml`, // 기본 경로
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://wonkooklee.github.io/blog",
+        sitemap: "https://wonkooklee.github.io/blog/sitemap.xml",
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+          },
+        ],
+      },
+    },
+    {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
